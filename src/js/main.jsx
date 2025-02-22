@@ -1,18 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-//Bootstrap
+// Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap"
+import "bootstrap";
 
-// index.css'
-import '../styles/index.css'
+// index.css
+import "./../styles/index.css"; // Asegúrate de que la ruta sea correcta
 
-// components
-import Home from './components/Home';
+// Components
+import { Layout } from "./components/layout"; // Asegúrate de que el componente esté correctamente exportado
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+// Crear el root y renderizar la aplicación
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
   <React.StrictMode>
-    <Home/>
-  </React.StrictMode>,
-)
+    <Layout />
+  </React.StrictMode>
+);
