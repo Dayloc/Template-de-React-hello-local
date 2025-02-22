@@ -3,7 +3,8 @@ import React from "react";
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 import { Link } from "react-router";
-import Prueba from "./Prueba";
+import UserPage from "./UserPage";
+
 //create your first component
 const Home = () => {
   return (
@@ -20,6 +21,12 @@ const Home = () => {
         love!
       </p>
       <Link to="/prueba">Prueba</Link>
+      <div>
+        <Link to="/prueba2">Prueba2</Link>
+      </div>
+      <div>
+        <Link to="/userPage/dayloc">UserPage</Link>
+      </div>
     </div>
   );
 };
